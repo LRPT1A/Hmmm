@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>hmmmm</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Você é gay?</title>
+    <link rel="icon" href="lg.png">
+</head>
+
+<body>
+    
+    <div id="conteudo">
+        <img src="hello.png" alt="rise of coffe" class="img">
+        <h2>Você é gay?</h2>
+        <button class="btn" onclick="sim()">SIM</button>
+        <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+    </div>
+</body>
+   
+<section class="doiis">
+<script>
+    function sim() {
+        alert("iiiiiiiiiiiiiiii, gayzão pra krlh :D");
+        // redireciona para um URL após clicar no SIM
+       location.href= "https://youtu.be/KQ3m4SneVJA"
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    
+    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
+
+</script>
+</section>
+</html>
